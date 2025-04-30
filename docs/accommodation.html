@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ginzan Onsen</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <section class="transport_header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <br><input type="text" placeholder="Search..."></i> </br>
+      <div class="nav-links" id="navLinks">
+        <span class="material-symbols-outlined" onclick="hideMenu()">
+        close</span>
+        <ul>
+          <li><a href="index.html">Area</a></li>
+          <li><a href="transport.html">Transport</a></li>
+          <li><a href="accommodation.html">Accommodation</a></li>
+          <li><a href="food_nearby.html">Food Nearby</a></li>
+        </ul>
+      </div>
+      <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+    </nav>
+  </section>
+
+  <section class="accommodation">
+    <h1>Hotel Recommendations</h1>
+    <p>There is a total of 13 Japanese ryokans in Ginzan Onsen. The two most popular ryokans are Notoya Ryokan and Fujiya. <br><br>
+      
+      Due to its extreme surge in popularity among tourists, staying at Ginzan Onsen can be difficult to nearly outright impossible to stay at, depending on the time of the year. Most of these ryokans requires prebook 8 months ahead.<br>
+      <br>
+      If you wish to stay here during the snowy months of December, January, and February then you generally must reserve at least one year in advance to get a room along the main street.  Most ryokan here are family owned and will only accept reservations via direct phone call that must be made in Japanese.  We recommend having a Japanese friend making this call for you, this is how most foreigners who live in Japan get reservations at these places. 
+    </p>
+    <p><em>
+      Updates: 2023-10-11   Views: 27.9k </em></p>
+    
+    <div class="row">
+        <div class="accommodation-col">
+          <img src="images/notoya.jpeg">
+          <h2>Notoya Ryokan</h2>
+          <p>Location rating :⭐⭐⭐⭐⭐ <br><br>
+          106 reviews from verified guests <br><br>
+          Price Range : 25,300 - 28,600 yen per guest per night. The price includes one dinner and one breakfast.
+</p>
+        </div>
+        <div class="accommodation-col">
+          <img src="images/fujiya.jpeg">
+          <h2>Fujiya</h2>
+          <p>Location rating :⭐⭐⭐⭐⭐ <br><br>
+            98 reviews from verified guests<br><br>
+            Price Range : 33,000 - 68,000 yen per guest per night
+            The price includes one dinner and one breakfast.
+          </p>
+        </div>
+        <div class="accommodation-col">
+          <img src="images/kosekiya.jpg">
+          <h2>Kosekiya Annex</h2>
+          <p>Location rating :⭐⭐⭐⭐⭐ <br><br>
+            78 reviews from verified guests<br><br>
+            Price Range : 28,000 - 63,000 yen per guest per night
+            The price includes one dinner and one breakfast.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  <!-----Customer Reviews----->
+  <section class="review">
+   <h4>Customer Reviews</h4>
+    <p>Discover what guests are saying about these ryokans!</p>
+
+    <div class="row">
+      <div class="review-col">
+        <img src="images/profile1.jpeg">
+        <div>
+          <p> Notoya Ryokan in Ginzan Onsen is a true gem. Charming, serene, and the perfect retreat. The traditional Japanese room was both elegant and serene, complemented by soothing onsen baths. Highly recommended!</p><br>
+          <h2> Notoya Ryokan </h2><br>
+          <h3> Christine Kim </h3>
+          <p>4.7<span class="rating"> ⭐⭐⭐⭐⭐</span> </p>
+        </div>
+      </div>
+      <div class="review-col">
+        <img src="images/profile2.jpeg">
+        <div>
+          <p> My stay at Fujiya in Ginzan Onsen was pure enchantment. The staff's hospitality was exceptional, making me feel welcomed. Ginzan Onsen's magical ambiance combined with the comforts of the hotel made for an unforgettable escape. </p><br>
+          <h2> Fujiya </h2><br>
+          <h3> Bryan Stanley </h3>
+          <p>5<span class="rating"> ⭐⭐⭐⭐⭐</span> </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      
+
+  <!------Javascipt for Toggle Menu------>
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+
+</body>
+
+</html>

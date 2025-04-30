@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ginzan Onsen</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+  <section class="transport_header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <br><input type="text" placeholder="Search..."></i> </br>
+      <div class="nav-links" id="navLinks">
+        <span class="material-symbols-outlined" onclick="hideMenu()">
+        close</span>
+        <ul>
+          <li><a href="index.html">Area</a></li>
+          <li><a href="transport.html">Transport</a></li>
+          <li><a href="accommodation.html">Accommodation</a></li>
+          <li><a href="food_nearby.html">Food Nearby</a></li>
+        </ul>
+      </div>
+      <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+    </nav>
+  </section>
+
+  <section class="transport">
+    <h1>How to Get There from Tokyo?</h1>
+    <p>Ginzan Onsen is located on the inland side of Yamagata Prefecture and is about one hour away from Yamagata City.
+      You can reach there by bullet train and bus, car or taxi </p>
+
+    <div class="row">
+      <a href="#bullet-train-section" class="transport-col">
+        <img src="images/shinkensen.jpeg">
+        <h3>Bullet Train and Bus</h3>
+      </a>
+      <a href="#rental-car-section" class="transport-col">
+        <img src="images/rental car.jpeg">
+        <h3>Rental Car</h3>
+      </a>
+      <a href="#taxi-section" class="transport-col">
+        <img src="images/taxi.webp">
+        <h3>Taxi</h3>
+      </a>
+    </div>
+    <br><br>
+    <h1>The Three Modes of Transportation</h1>
+  </section>
+
+   <!------text-and-image------>
+  <section class="text-and-image" id="bullet-train-section">
+  <section class="text-and-image">
+    <div class="text">
+    <h2> 1. By Bullet Train (Shinkansen)</h2>
+      
+    <p>
+      <br>Take JR Yamagata Shinkansen to Oishida Station <br>
+      <span class="material-symbols-outlined">
+      schedule
+      </span> 3 hours 20 mins <span class="material-symbols-outlined">
+      attach_money
+      </span> 12,500 yen one way <br><br>
+      -> then take Hanagasa Bus that departs roughly every 60 - 90 mins<br>
+
+      <span class="material-symbols-outlined">
+      schedule
+      </span> 35 minutes <span class="material-symbols-outlined">
+      attach_money
+      </span>720 yen one way <br><br>
+      -> for bus schedule <a href="http://www.hanagasa-bus-taisei.co.jp/base.html"><em>Click here</em></a>
+    </p>
+    </div>
+    <div class src="image">
+    <img src="images/shinkensen.jpeg">
+    </div>
+  </section>
+  </section>
+
+  <section class="text-and-image" id="rental-car-section">
+  <section class="text-and-image">
+  <div class="text">
+    <h2> 2. By Rental Car</h2>
+    <p>
+      Rental cars are available at stations along the Yamagata Shinkansen such as Murayama, Shinjo and Yamagata stations, as well as at Yamagata Airport.<br><br>
+      <strong>Parking lots: </strong> <br>
+      <strong>- Ginzanonsen Kyodo Parking Lot</strong>       
+      <a href="https://www.google.com/maps/place/Ginzanonsen+Kyodo+Parking+Lot/@38.5730827,140.5252195,15z/data=!4m6!3m5!1s0x5f895d6644b132fd:0xee7bb64bfb963f01!8m2!3d38.5730827!4d140.5252195!16s%2Fg%2F11s177_h9p?entry=ttu"><em>Click here</em></a><br>
+      <span class="material-symbols-outlined">
+      schedule
+      </span> 5-10 minute walk to Ginzan Onsen (Closed from December – April)
+    <br><span class="material-symbols-outlined">
+        attach_money</span> ¥500 yen 
+      <br><br>
+      <strong>- Taisho Romankan</strong> (Free parking, take a 5-10 minute ¥300 round-trip shuttle bus from here to Ginzan Onsen.) <a href=http://bus.ginzanso.jp/><em>Click here</em></a>
+    </p>
+    </div>
+    <div class src="image">
+    <img src="images/rental car.jpeg">
+    </div>
+    </section>
+    </section>
+
+
+  <section class="text-and-image" id="taxi-section">
+   <section class="text-and-image">
+  <div class="text">
+    <h2> 3. By Taxi</h2>
+    <p>
+      <br>Start from 22,000 yen round-trip. <br><br>
+
+      <em>Note: Rental car can be convenient for exploring the area, however it is not recommended to drive during winter as the ground could be slippery from the snow.</em>
+    </p>
+    </div>
+    <div class src="image">
+    <img src="images/taxi.webp">
+    </div>
+     </section>
+    </section>
+  
+
+  <!------Javascipt for Toggle Menu------>
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+
+</body>
+
+</html>

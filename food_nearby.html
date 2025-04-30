@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ginzan Onsen</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+  <section class="food_header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <span class="material-symbols-outlined" onclick="hideMenu()">
+        close</span>
+        <ul>
+          <li><a href="index.html">Area</a></li>
+          <li><a href="transport.html">Transport</a></li>
+          <li><a href="accommodation.html">Accommodation</a></li>
+          <li><a href="food_nearby.html">Food Nearby</a></li>
+        </ul>
+      </div>
+      <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+    </nav>
+
+    <div class="text-box">
+      <h1>What to eat?</h1>
+      <br> <a href="" class="hero-btn">Search... (Ex. Ramen)</a></br>
+    </div>
+
+
+  </section>
+
+  <!------food type------>
+  <section class="food_type">
+    <h1> Search By Food Type</h1>
+
+    <div class="row">
+      <div class="food_type-col">
+        <img src="images/ramen.jpeg">
+        <div class="layer">
+          <h3>Ramen</h3>
+        </div>
+      </div>
+
+      <div class="food_type-col">
+        <img src="images/soba.jpeg">
+        <div class="layer">
+          <h3>Soba</h3>
+        </div>
+      </div>
+
+      <div class="food_type-col">
+        <img src="images/desserts.jpeg">
+        <div class="layer">
+          <h3>Desserts</h3>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!------restaurants------>
+  <section class="restaurants">
+    <h1>Popular Restaurants in Town</h1>
+    <div class="rectangle-row">
+      <div class="rectangle">
+        <div class="image-half" style="background: url(images/restaurant1.webp) center/cover no-repeat;"> </div>
+        <div class="text-half">
+          <div class="text">
+            <h2>Haikara Dori</h2> <br>
+            <p> <strong>Food:</strong> 4.8 ⭐⭐⭐⭐⭐ <br>
+              <strong> Address: </strong> 451 Ginzanshinhata, Obanazawa <br>
+              <strong> Contact: </strong> 02 9884-3879
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rectangle">
+        <div class="image-half" style="background: url(images/restaurant2.jpeg) center/cover no-repeat;"> </div>
+        <div class="text-half">
+          <div class="text">
+            <h2>Nagawa Tofuya</h2> <br>
+            <p> <strong>Food:</strong> 4.7 ⭐⭐⭐⭐⭐ <br>
+              <strong> Address: </strong> 427 Ginzanshinhata Waraku Ashinoyu <br>
+              <strong> Contact: </strong> 02 3282-2384
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rectangle">
+        <div class="image-half" style="background: url(images/restaurant3.png) center/cover no-repeat;"> </div>
+        <div class="text-half">
+          <div class="text">
+            <h2>Meiyuan Ginzan</h2> <br>
+            <p> <strong>Food:</strong> 4.6 ⭐⭐⭐⭐⭐ <br>
+              <strong> Address: </strong> 438-2 Ginzan Shinhata <br>
+              <strong> Contact: </strong> 02 2384-2383
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p> </p>
+
+
+
+    <!------Javascipt for Toggle Menu------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+</body>
+</section>

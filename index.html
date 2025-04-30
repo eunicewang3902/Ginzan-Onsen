@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ginzan Onsen</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <span class="material-symbols-outlined" onclick="hideMenu()">
+        close</span>
+        <ul>
+          <li><a href="index.html">Area</a></li>
+          <li><a href="transport.html">Transport</a></li>
+          <li><a href="accommodation.html">Accommodation</a></li>
+          <li><a href="food_nearby.html">Food Nearby</a></li>
+        </ul>
+      </div>
+      <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+    </nav>
+
+    <div class="text-box">
+      <h1>Ginzan Onsen</h1>
+      <p>4.7<span class="rating"> ⭐⭐⭐⭐⭐</span> <br>One of Japan's best onsen towns</p>
+      <a href="index.html" class="hero-btn">Visit Us To Know More</a>
+    </div>
+
+
+  </section>
+
+  <!------Intro------>
+
+  <section class="intro">
+    <h4>Introduction</h4>
+    <p> Ginzan onsen has a rich history, originally developed around a silver mine. Today, it still remains its historic
+      buildings and ryokans from its mining past lined up along the Ginzan river. The setting of the hot spring resorts,
+      traditional bridge crossings and wooden buildings illuminated by lanterns during the evening, resembles a scene
+      from a Studio Ghibli movie, “Spirited away” by Hayao Miyazaki. Ginzan onsen is especially beautiful during winter
+      as the scenery will be covered in snow.</p> <br>
+    
+<h3> Learn more About:</h3>
+    <div class="row">
+      <a href="transport.html" class="course-col">
+        <img src="images/shinkensen.jpeg" >
+        <h3>Transport</h3>
+      </a>
+
+      <a href="accommodation.html" class="course-col">
+        <img src="images/notoya.jpeg" >
+        <h3>Accommodation</h3>
+      </a>
+
+      <a href="food_nearby.html" class="course-col">
+        <img src="images/food.jpeg" >
+        <h3>Food Nearby</h3>
+      </a>
+      
+    </div>
+    <p><em>
+      Updates: 2023-10-11   Views: 33.2k </em></p>
+
+  </section>
+
+
+  <!-----Geographic Location----->
+  <section class="geo">
+    <h4> Geographic Location</h4>
+    <p>
+      Enclosed by the Sea of Japan to the west and mountains to the east, Yamagata Prefecture is defined by its nature.
+      Along the coast sit the port cities of Tsuruoka and Sakata, while deep inland is Zao Onsen, an area home to hot
+      springs, sparsely visited ski slopes, and spectacular snow-covered evergreens.
+    </p>
+    
+        <div class="row">
+          <div class="geo-col">
+            <img src="images/river.jpg">
+            <div class="layer">
+              <h3>River</h3>
+            </div>
+          </div>
+
+          <div class="geo-col">
+            <img src="images/hotel.jpeg">
+            <div class="layer">
+              <h3>Yamagata Perfecture</h3>
+            </div>
+          </div>
+
+          <div class="geo-col">
+            <img src="images/onsen.jpg">
+            <div class="layer">
+              <h3>Onsen</h3>
+            </div>
+          </div>
+        </div>
+
+  </section>
+
+
+   <!-----History and heritage----->
+  <section class="history">
+    <h4>History and heritage</h4>
+    <p> The area originally developed around a silver mine; however, these days it is better known as one of Japan's prettiest onsen towns with historic ryokan lined up along the river.
+
+    Yamagata is a fantastic cultural destination to discover some of Tohoku's varied treasures, and here we explore some of its cultural highlights, from one of the top Kumano shrines in Japan to perhaps its most well-known hot spring town.
+</p>
+    <div class="history-col"> <br>
+    <img src="images/history.jpeg">
+    </div>
+  </section>
+
+  <!------Contact------>
+  <section class="contact">
+    <h1> Feel free to connect with us!</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+  </section>
+
+   <!------Footer------>
+  <section class="footer">
+    <p> Stay updated and engage with us on social media</p>
+    <a href="" class="fa fa-facebook"></a>
+    <a href="" class="fa fa-twitter"></a>
+    <a href="" class="fa fa-google"></a>
+    <a href="" class="fa fa-youtube"></a>
+    <a href="" class="fa fa-instagram"></a>
+  </section>
+  
+
+  <!------Javascipt for Toggle Menu------>
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+
+</body>
+
+</html>
